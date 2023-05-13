@@ -1,8 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+
 html {
-    background-color: white;
+    background-color: #fff;
 }
 
 * {
     margin: 0px;
     padding: 0px 0px;
+}
+
+header{
+    background-color: #fff;
+
+}
+
+.navbar{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navbar.one{
+    justify-content: space-between !important;
+    padding: 30px;
+}
+
+.navbar.one a{
+    font-size: 1.5em;
+}
+
+
+
+.navbar a {
+    color: black;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    
+}
+
+.dropdown-menu-header.drop{
+    display: none;
+    list-style-type: none;
+}
+
+.header-menu__dropdown-nav.socials{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.navbar-item.bag{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.header-menu__dropdown-nav.socials a{
+    padding: 10px;
+}
+
+.navbar.two{
+    padding: 0px 15px;
+    justify-content: center !important;
+}
+
+.navbar.two a {
+    padding: 15px 15px;
 }
