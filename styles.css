@@ -12,6 +12,8 @@ html {
     padding: 0px 0px;
 }
 
+
+/* Navbar CSS */
 header{
     background-color: #f5f5f5;
     user-select: none;
@@ -34,6 +36,7 @@ header{
 .navbar.one{
     justify-content: space-between !important;
     padding: 35px;
+    padding-bottom: 10px;
 } 
 
 .navbar.one a{
@@ -74,6 +77,17 @@ header{
     width: 140px;
     margin-bottom: 15px;
     margin-right: 100px;
+    transition: all 0.5s;
+}
+
+.navbar-a-item.bag::after{
+    opacity: 0;
+    height: 0;
+}
+
+.navbar-a-item.bag{
+    width: 10px;
+    transition: all 0.5s;
 }
 
 .header-menu__dropdown-nav.contactbtn a{
@@ -86,34 +100,71 @@ header{
     align-items: center;
     justify-content: center;
 }
+
+.contactbtn{
+    transition: all 0.5s;
+}
+
+.navbar-item.bag:focus::after{
+    opacity: 0;
+    
+}
+
+.navbar-a-item.bag:hover{
+    transform: scale(1.2);
+}
+
+.contactbtn:hover{
+    transform: scale(1.1);
+}
   
 .navbar.two{
-    padding: 35px 15px;
+    padding: 20px 15px;
     padding-top: 0px;
     justify-content: center !important;
 }
 
 .navbar.two a {
-    padding: 15px 15px;
+    padding: 0px;
+    padding-bottom: 5px;
+    position: relative;
 }
 
-.navbar.one a::after {
+.navbar.two li{
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+
+.navbar-a-item::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.1em;
+    height: 0.15em;
+    padding-top: 0px;
     background-color: black;
     opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-    z-index: 1;
+    transition: opacity 0.7s, transform 0.7s;
   }
   
-  .navbar.one a:hover::after,
-  .navbar.one a:focus::after {
+  .navbar-a-item:hover::after,
+  .navbar-a-item:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
+  }
+  
+  
+   .navbar-a-item::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: left;
+  }
+  
+   .navbar-a-item:hover::after,
+  .navbar-a-item:focus::after{
+    transform: scale(1);
   }
 
 
@@ -125,3 +176,11 @@ header{
         margin-right: 15px;
     }
   }
+
+  /* Nav Info */
+
+
+ .navinfocontainer img{
+    width: 100%;
+    float: right;
+ }
