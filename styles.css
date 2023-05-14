@@ -2,7 +2,9 @@
 
 
 html {
-    background-color: #fff;
+    background-color: white;
+    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 * {
@@ -11,8 +13,14 @@ html {
 }
 
 header{
-    background-color: #fff;
+    background-color: #f5f5f5;
+    user-select: none;
 
+}
+
+.logotext{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar{
@@ -25,21 +33,22 @@ header{
 
 .navbar.one{
     justify-content: space-between !important;
-    padding: 30px;
-}
+    padding: 35px;
+} 
 
 .navbar.one a{
-    font-size: 1.5em;
-}
+    font-size: 1.7em;
 
+} 
 
 
 .navbar a {
     color: black;
     font-family: 'montserrat', sans-serif;
     letter-spacing: 2px;
-    font-size: 0.9em;
-    
+    font-size: 0.8em;
+    text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 .dropdown-menu-header.drop{
@@ -47,33 +56,72 @@ header{
     list-style-type: none;
 }
 
-.header-menu__dropdown-nav.socials{
+.header-menu__dropdown-nav.contactbtn{
     list-style-type: none;
-    display: flex;
     flex-direction: row;
-    width: 100px;
-    margin-bottom: 10px;
-    margin-left: 50px;
+    width: 140px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    border: 1px solid;
 }
+
+
 
 .navbar-item.bag{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 100px;
-    margin-bottom: 10px;
-    margin-right: 50px;
+    width: 140px;
+    margin-bottom: 15px;
+    margin-right: 100px;
 }
 
-.header-menu__dropdown-nav.socials a{
-    padding: 10px;
+.header-menu__dropdown-nav.contactbtn a{
+    font-size: 0.8em;
+    padding: 10px 10px;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
 .navbar.two{
-    padding: 0px 15px;
+    padding: 35px 15px;
+    padding-top: 0px;
     justify-content: center !important;
 }
 
 .navbar.two a {
     padding: 15px 15px;
 }
+
+.navbar.one a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    z-index: 1;
+  }
+  
+  .navbar.one a:hover::after,
+  .navbar.one a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
+
+  @media screen and (max-width: 1090px) {
+    .header-menu__dropdown-nav.contactbtn{
+        margin-left: 15px;
+    }
+    .navbar-item.bag{
+        margin-right: 15px;
+    }
+  }
