@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Capture</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="icon" href="Logo.svg">
     <script src="https://kit.fontawesome.com/0cecbc8ff8.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7703c8ece0.js" crossorigin="anonymous"></script>
@@ -127,15 +128,36 @@
         </div>
     </header>
 </header>  
-<div class="navinfocontainer">
+<header>
+    <div id="indicators" class="carousel slide" data-ride="carousel">
+
+        <div style="background-color: black;" class="carousel-inner" role="listbox">
+
+            <div class="carousel-item index active" style="background-image: url('Website/Nav\ img.jpg');">
+                <div class="carousel-caption index d-none d-md-block">
+                    <h3 class="display-4">Shop All Products<br>Below</h3>
+                </div>
+            </div>
+        </div> 
+    </div>
+</header>
+<!-- <div class="navinfocontainer">
     <div class="navtext">
         <h1>Shop below</h1>
     </div>
    <img src="Website/Nav img.jpg">
-</div>
+</div> -->
 
 <div class="navinfocontainer">
     <img src="Website/Screen Shot 2023-05-14 at 9.04.06 PM.png">
  </div>
 </body>
+<script>
+    $(function() {
+        $(document).scroll(function() {
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 </html>

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 
-@font-face {
-    font-family: Tiemann;
-    src: url('Tiemann\ Regular/Tiemann Regular.ttf');
-}
+
 
 html {
     background-color: white;
@@ -67,7 +64,7 @@ header{
     list-style-type: none;
     flex-direction: row;
     width: 140px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-left: 100px;
     border: 1px solid;
 }
@@ -79,7 +76,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 140px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-right: 100px;
     transition: all 0.5s;
 }
@@ -182,21 +179,41 @@ header{
   }
 
   /* Nav Info */
-.navinfocontainer{
-    position: relative;
-    text-align: center;
+
+  @font-face {
+    font-family: Tiemann;
+    src: url(Tiemann\ Regular.ttf);
+}
+ 
+.carousel-caption.index{
+    bottom: 40% !important;
+}
+
+.carousel-item.index{
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 70vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: all 0.5s;
+    }
+  
+  
+    .display-4 {
+    font-family: Tiemann, serif;
     color: white;
-}
+    font-size: 3.5em;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    letter-spacing: 3px;
+    text-align: left;
+    }
 
-.navtext{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    font-family: ;
-}
-
- .navinfocontainer img{
-    height: auto;
-    width: 100%;
- }
+    ol, ul{
+        margin-bottom: 0px;
+    }
