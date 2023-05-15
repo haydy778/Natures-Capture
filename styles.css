@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 
+@font-face {
+    font-family: Tiemann;
+    src: url('Tiemann\ Regular/Tiemann Regular.ttf');
+}
 
 html {
     background-color: white;
@@ -178,9 +182,21 @@ header{
   }
 
   /* Nav Info */
+.navinfocontainer{
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+.navtext{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-family: ;
+}
 
  .navinfocontainer img{
+    height: auto;
     width: 100%;
-    float: right;
  }
