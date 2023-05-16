@@ -11,6 +11,7 @@ html {
 * {
     margin: 0px;
     padding: 0px 0px;
+    box-sizing: border-box;
 }
 
 
@@ -111,8 +112,13 @@ header{
     
 }
 
-.navbar-a-item.bag:hover{
-    transform: scale(1.2);
+.logoimage:focus::after{
+    opacity: 0;
+    
+}
+
+.navbar-item.bag:hover{
+    transform: scale(1.1);
 }
 
 .contactbtn:hover{
@@ -184,36 +190,3 @@ header{
     font-family: Tiemann;
     src: url(Tiemann\ Regular.ttf);
 }
- 
-.carousel-caption.index{
-    bottom: 40% !important;
-}
-
-.carousel-item.index{
-    height: 100vh;
-}
-
-.carousel-item {
-    height: 70vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    transition: all 0.5s;
-    }
-  
-  
-    .display-4 {
-    font-family: Tiemann, serif;
-    color: white;
-    font-size: 3.5em;
-    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-    letter-spacing: 3px;
-    text-align: left;
-    }
-
-    ol, ul{
-        margin-bottom: 0px;
-    }
