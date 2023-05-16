@@ -16,6 +16,11 @@ html {
 
 
 /* Navbar CSS */
+
+.navigation-bar{
+    border-bottom: 1px solid black;
+}
+
 header{
     background-color: #f5f5f5;
     user-select: none;
@@ -189,4 +194,9 @@ header{
   @font-face {
     font-family: Tiemann;
     src: url(Tiemann\ Regular.ttf);
+}
+
+.caption{
+    margin-top: 350px;
+    max-width: 600px;
 }
