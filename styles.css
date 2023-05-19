@@ -279,9 +279,43 @@ header {
     font-weight: 200;
 }
 
+.collections-text-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4em;
+}
+
+.collections-text-container h6{
+  margin-top: 3em;
+  font-family: "montserrat", sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: black;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+}
+.collections-text-container h1{
+  font-family: Tiemann, serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: black;
+  font-size: 3em;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  text-transform: uppercase;
+}
+
+.collections{
+  display: flex;
+  justify-content: center;
+}
+
+.collections-image img{
+  width: 300px;
+}
+
 .image{
-  padding-top: 3em;
-  height: auto;
   width: 100%;
 }
 
