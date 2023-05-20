@@ -420,34 +420,6 @@ header {
   border: solid 1px #606060;
 }
 
-.about-me {
-  height: 70vh;
-  background: no-repeat center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  transition: all 0.5s;
-}
-
-.container {
-  width: 100%;
-  height: 70vh;
-  background-color: #606060;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-me-text {
-  position: absolute;
-  transform: translate(50%, 50%);
-  text-align: center;
-}
-
-.image {
-  width: 100%;
-}
 
 @media (min-width: 981px) {
   .section {
@@ -456,11 +428,11 @@ header {
 }
 
 .section {
-  background-blend-mode: multiply;
-  background-image: url(Website/83A93A6E-11D3-417F-A971-FFF655FDF2E8.jpg) !important;
+  background-blend-mode: multiply, soft-light;
+  background-image: url(Cow.jpg) !important;
   position: relative;
   background-color: #606060 !important;
-  background-position: 50% top;
+  background-position: center;
   background-size: 100%;
   background-size: cover;
   height: 60vh;
@@ -547,5 +519,10 @@ header {
 .image-button:hover {
   color: #b87354;
   border: solid 1px #b87354;
+}
+
+.image{
+  width: 100%;
+  padding: 5em 0em;
 }
 
