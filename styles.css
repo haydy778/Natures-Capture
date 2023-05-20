@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
 
-
 html {
   background-color: white;
   overflow-x: hidden;
@@ -212,7 +211,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   transition: all 0.5s;
-  background-color: #f5f5f5;;
+  background-color: #f5f5f5;
 }
 
 .banner.one {
@@ -225,7 +224,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: all 0.5s;  
+  transition: all 0.5s;
 }
 
 .banner.two {
@@ -332,7 +331,7 @@ header {
   font-family: "montserrat", sans-serif;
   font-size: 1em;
   letter-spacing: 2px;
-  color: black;
+  color: #b87354;
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
 .collections-text-container h1 {
@@ -420,7 +419,6 @@ header {
   border: solid 1px #606060;
 }
 
-
 @media (min-width: 981px) {
   .section {
     padding: 4% 0;
@@ -442,7 +440,7 @@ header {
   align-items: center;
 }
 
-.text_container{
+.text_container {
   max-width: 1000px;
   color: white;
   text-align: center;
@@ -477,7 +475,7 @@ header {
   line-height: 1.5em;
 }
 
-.line-container{
+.line-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -491,7 +489,7 @@ header {
   text-align: center;
 }
 
-.line-container.two{
+.line-container.two {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -521,8 +519,61 @@ header {
   border: solid 1px #b87354;
 }
 
-.image{
+.image {
   width: 100%;
   padding: 5em 0em;
 }
+
+.colle-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.colle-item.portrait{
+  width: 500px;
+  height: 650px;
+}
+
+.colle-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  background: no-repeat center scroll;
+  background-size: cover;
+  margin-right: 2em;
+  margin: 1em;
+}
+
+.colle-container-inner{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.colle-button-container {
+  font-family: "montserrat", sans-serif;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.colle-button {
+  border-radius: 0px;
+  background-color: #b87454a7 !important;
+  padding: 0.8em 1.8em;
+  color: white;
+  background-color: transparent;
+  text-decoration-line: none;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.colle-button:hover {
+  background-color: #606060 !important;
+}
+
+
 
