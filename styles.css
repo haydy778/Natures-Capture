@@ -16,6 +16,31 @@ html {
   box-sizing: border-box;
 }
 
+/* Announcement Bar CSS */
+
+/* .announcement-bar{
+  width: 100%;
+  height: 2.5em;
+  background-color: #606060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement-text-container span{
+  color: white;
+  font-family: Tiemann, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1em;
+  text-decoration-line: none;
+} */
+
 /* Navbar CSS */
 
 header {
@@ -292,6 +317,8 @@ header {
   }
 }
 
+/* Rolling Track CSS */
+
 .track-container {
   padding: 1em;
   background-color: #606060;
@@ -318,6 +345,8 @@ header {
   font-weight: 200;
   text-shadow: 0 1px 3px rgb(0 0 0 / 15%);
 }
+
+/* Featured Collections Container */
 
 .collections-text-container {
   display: flex;
@@ -420,6 +449,8 @@ header {
   color: #fff;
 }
 
+/* Favourite Images CSS */
+
 @media (min-width: 981px) {
   .section {
     padding: 4% 0;
@@ -427,14 +458,13 @@ header {
 }
 
 .section {
-  background-blend-mode: multiply, soft-light;
-  background-image: url(Cow.jpg) !important;
+  background-image: url('Website/Cow.jpg') !important;
   position: relative;
   background-color: #606060 !important;
   background-position: center;
   background-size: 100%;
   background-size: cover;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -485,8 +515,8 @@ header {
 }
 
 .line {
-  border-left: 1px solid white;
-  height: 50px;
+  border-left: 1.5px solid white;
+  height: 60px;
   text-align: center;
 }
 
@@ -520,6 +550,8 @@ header {
   background-color: #b87354;
   border: solid 0px #b87354;
 }
+
+/* Collections CSS */
 
 .colle-container {
   display: flex;
@@ -558,7 +590,7 @@ header {
 
 .colle-button {
   border-radius: 0px;
-  background-color: #b87454a7 !important;
+  background-color: #b87454cb !important;
   padding: 0.8em 1.8em;
   color: white;
   background-color: transparent;
@@ -574,24 +606,15 @@ header {
 .button-container.two {
   margin-top: 5em;
 }
-/* 
-.button.two{
-  background-color: #b87454;
-  color: #fff;
-}
-
-.button.two:hover{
-  background-color: #606060;
-  color: #fff;
-} */
 
 
+/* Image Promo */
 
 .responsive-two-column-grid {
     display:block;
     height: 100vh;
     gap: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .responsive-two-column-grid > * {
@@ -607,7 +630,7 @@ header {
 }
 
 .image-promo{
-  background-image: url('Wall\ art\ 2.jpg') !important;
+  background-image: url('Website/Wall\ art\ 2.jpg') !important;
   background-position: center;
   background-size: cover; 
   margin-left: 1em;
@@ -618,7 +641,7 @@ header {
 }
 
 .image-promo-two{
-  background-image: url('Wall\ art.jpg') !important;
+  background-image: url('Website/Wall\ art.jpg') !important;
   /* background: no-repeat center scroll !important; */
   background-position-x: 15%;
   background-position-y: 80%;
@@ -639,7 +662,7 @@ header {
 
 .button.three{
   color: #fff;
-  background-color: #b87354;
+  background-color: #b87454;
   margin: 0em 1em;
   width: 10em;
   font-size: 15px;
@@ -662,7 +685,7 @@ header {
   background-color: #ffffffa8;
   padding-top: 1em;
   margin-bottom: 0.5em;
-  max-width: 550px;
+  max-width: 550px
 }
 .image-promo{
   outline: 2px solid #fff;
@@ -673,3 +696,6 @@ header {
   outline: 2px solid #fff;
   outline-offset: -10px;
 }
+
+/* Footer CSS */
+
