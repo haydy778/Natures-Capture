@@ -555,7 +555,7 @@ header {
 .image-button:hover {
   color: #fff;
   background-color: #b87354;
-  border: solid 0px #b87354;
+  border: solid 1px #b87354;
 }
 
 /* Collections CSS */
