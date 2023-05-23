@@ -522,8 +522,9 @@ header {
 }
 
 .line {
-  border-left: 1.5px solid white;
-  height: 60px;
+  border-left: 2px solid white;
+  border-radius: 3px;
+  height: 70px;
   text-align: center;
 }
 
