@@ -67,7 +67,7 @@
           </ul>
         </div>
       </header>
-      <header class="header-1">
+      <header class="header-two" id="headerTwo">
         <div class="navbar-container">
           <ul class="navbar two" id="navbar">
             <li class="navbar-item">
@@ -376,10 +376,11 @@
   </body>
   <script>
     $(function () {
-      $(document).scroll(function () {
-        var $nav = $("#mainNavbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-      });
+    $(document).scroll(function () {
+      var $nav = $("#mainNavbar");
+      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
+  });
   </script>
+  <script src="main.js"></script>
 </html>
