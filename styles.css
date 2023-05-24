@@ -522,8 +522,9 @@ header {
 }
 
 .line {
-  border-left: 1.5px solid white;
-  height: 60px;
+  border-left: 2px solid white;
+  border-radius: 3px;
+  height: 70px;
   text-align: center;
 }
 
@@ -555,7 +556,7 @@ header {
 .image-button:hover {
   color: #fff;
   background-color: #b87354;
-  border: solid 0px #b87354;
+  border: solid 1px #b87354;
 }
 
 /* Collections CSS */
@@ -806,7 +807,7 @@ ul {
   line-height: 1.5em;
 }
 
-/*responsive*/
+/* Responsive CSS*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
