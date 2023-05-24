@@ -818,3 +818,33 @@ ul {
     width: 100%;
   }
 }
+
+.banner.two.contact {
+  height: 100vh;
+  width: 50%;
+  float: right;
+  min-height: 350px;
+  background: no-repeat left scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.banner.one.contact{
+  height: 100vh;
+  width: 50%;
+  float: left;
+  min-height: 350px;
+  background: no-repeat left scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.image{
+  width: 100% !important;
+}
