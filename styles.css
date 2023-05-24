@@ -846,6 +846,15 @@ ul {
   transition: all 0.5s;
 }
 
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
 .image{
-  width: 100% !important;
+  width: 85% !important;
+  
 }
