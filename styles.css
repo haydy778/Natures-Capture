@@ -184,6 +184,7 @@ header {
   background-color: black;
   opacity: 0;
   transition: opacity 0.7s, transform 0.7s;
+  transition-property: right, 0.5s;
 }
 
 .navbar-a-item:hover::after,
@@ -195,7 +196,7 @@ header {
 .navbar-a-item::after {
   opacity: 1;
   transform: scale(0);
-  transform-origin: bottom left;
+  transform-origin: left;
 }
 
 .navbar-a-item:hover::after,
@@ -722,7 +723,7 @@ ul {
 }
 
 .footer {
-  background-color: #606060;
+  background-color: #60606080;
   padding: 70px 0;
 }
 
@@ -732,7 +733,7 @@ ul {
 
 .footer-col h4 {
   font-size: 25px;
-  color: #ffffff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 35px;
@@ -757,18 +758,18 @@ ul {
 }
 
 .footer-col ul li a {
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #000;
   text-decoration: none;
   font-family: "montserrat", sans-serif;
   display: block;
   transition: all 0.3s ease;
-  letter-spacing: 1px !important;
+  letter-spacing: 2px !important;
 }
 
 .footer-col ul li a:hover {
-  color: #ffffff;
+  color: #b87354;
   padding-left: 8px;
 }
 
@@ -804,7 +805,7 @@ ul {
 
 .footer-right{
   width: 300px;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 /* Responsive CSS*/
@@ -820,12 +821,17 @@ ul {
   }
 }
 
-.banner.two.contact {
+.banner-container.contact{
+  overflow: hidden;
   height: 100vh;
+}
+
+.banner.two.contact {
+  height: 110vh;
   width: 50%;
   float: right;
   min-height: 350px;
-  background: no-repeat left scroll;
+  background: no-repeat center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -834,7 +840,7 @@ ul {
 }
 
 .banner.one.contact{
-  height: 100vh;
+  height: 110vh;
   width: 50%;
   float: left;
   min-height: 350px;
@@ -846,15 +852,3 @@ ul {
   transition: all 0.5s;
 }
 
-.test{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3em;
-  margin-bottom: 5em;
-}
-
-.image{
-  width: 85% !important;
-  
-}
