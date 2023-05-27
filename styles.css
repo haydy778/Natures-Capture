@@ -832,7 +832,7 @@ ul {
   height: 150vh;
 }
 
-.banner.two.contact {
+.banner.one.contact {
   height: 150vh;
   width: 50%;
   float: left;
@@ -845,16 +845,54 @@ ul {
   transition: all 0.5s;
 }
 
-.banner.one.contact{
-  height: 150vh;
-  width: 50%;
-  float: right;
-  min-height: 350px;
-  background: no-repeat center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  transition: all 0.5s;
+.form-container{
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  padding-left: 2em;
+  width: 1000px;
 }
+
+.contact-form div{
+  margin: 3em;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  border: 0px;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding-left: 0px;
+  margin-bottom: 16px;
+  outline: none;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+textarea{
+  height: 100px !important;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  padding-left: 0px;
+  margin-bottom: 16px;
+  resize: none;
+  outline: none;
+  font-family: 'montserrat', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+label{
+  font-family: Tiemann;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
 
