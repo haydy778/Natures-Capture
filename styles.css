@@ -54,6 +54,10 @@ header {
   user-select: none;
 }
 
+.navigation-bar{
+  background-image: url('Website/Nav\ img.jpg') !important;
+}
+
 .logotext {
   margin-left: auto;
   margin-right: auto;
@@ -723,7 +727,7 @@ ul {
 }
 
 .footer {
-  background-color: #60606080;
+  background-color: #606060b7;
   padding: 70px 0;
 }
 
@@ -733,7 +737,7 @@ ul {
 
 .footer-col h4 {
   font-size: 25px;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 35px;
@@ -745,7 +749,7 @@ ul {
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 0%;
   bottom: -10px;
   background-color: #b87534;
   height: 2px;
@@ -760,7 +764,7 @@ ul {
 .footer-col ul li a {
   font-size: 18px;
   text-transform: capitalize;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-family: "montserrat", sans-serif;
   display: block;
@@ -769,7 +773,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  color: #b87354;
+  color: #000;
   padding-left: 8px;
 }
 
@@ -821,15 +825,17 @@ ul {
   }
 }
 
+/* Contact Page CSS */
+
 .banner-container.contact{
   overflow: hidden;
-  height: 100vh;
+  height: 150vh;
 }
 
 .banner.two.contact {
-  height: 110vh;
+  height: 150vh;
   width: 50%;
-  float: right;
+  float: left;
   min-height: 350px;
   background: no-repeat center scroll;
   -webkit-background-size: cover;
@@ -840,11 +846,11 @@ ul {
 }
 
 .banner.one.contact{
-  height: 110vh;
+  height: 150vh;
   width: 50%;
-  float: left;
+  float: right;
   min-height: 350px;
-  background: no-repeat left scroll;
+  background: no-repeat center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
