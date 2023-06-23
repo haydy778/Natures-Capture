@@ -18,7 +18,7 @@ html {
 
 /* Announcement Bar CSS */
 
-/* .announcement-bar{
+.announcement-bar{
   width: 100%;
   height: 2.5em;
   background-color: #606060;
@@ -39,7 +39,7 @@ html {
   letter-spacing: 2px;
   font-size: 1em;
   text-decoration-line: none;
-} */
+}
 
 /* Navbar CSS */
 
@@ -812,18 +812,6 @@ ul {
   line-height: 2em;
 }
 
-/* Responsive CSS*/
-@media (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-  }
-}
 
 /* Contact Page CSS */
 
@@ -900,4 +888,23 @@ label{
   text-transform: uppercase;
 }
 
+
+/* Responsive CSS*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .banner-caption{
+    right: 15%;
+  }
+}
 
