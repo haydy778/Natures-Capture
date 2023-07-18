@@ -264,6 +264,19 @@ header {
   transition: all 0.5s;
 }
 
+.banner.three{
+  height: 80vh;
+  width: 100%;
+  float: left;
+  min-height: 350px;
+  background: no-repeat center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
 .banner.two {
   float: left;
 }
