@@ -265,7 +265,7 @@ header {
 }
 
 .banner.three{
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   float: left;
   min-height: 350px;
@@ -919,5 +919,26 @@ label{
   .banner-caption{
     right: 15%;
   }
+}
+
+.portfolio-con{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.col-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-image{
+  margin: 5px;
+}
+
+.col-image img{
+  width: 800px;
 }
 
