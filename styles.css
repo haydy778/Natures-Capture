@@ -91,12 +91,27 @@ header {
   text-transform: uppercase;
 }
 
-.dropdown-menu-header.drop {
-  display: none;
-  list-style-type: none;
+.dropdown-menu-name:hover .dropdown-menu-header.drop{
+  display: block;
 }
 
-.header-menu__dropdown-nav.contactbtn {
+.dropdown-menu-header.drop {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  text-align: center;
+  width: 250px;
+  background-color: white;
+  padding: 20px 0px;
+  margin-left: -60px;
+  transition: all 0.5s !important;
+}
+
+.header-menu__dropdown-nav li{
+  margin: 10px 10px;
+}
+
+.contactbtn {
   list-style-type: none;
   flex-direction: row;
   width: 140px;
@@ -125,8 +140,8 @@ header {
   transition: all 0.5s;
 }
 
-.header-menu__dropdown-nav.contactbtn a {
-  font-size: 0.8em;
+.contactbtn a {
+  font-size: 0.8em !important;
   padding: 10px 10px;
 }
 
