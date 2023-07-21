@@ -957,3 +957,28 @@ label{
   width: 800px;
 }
 
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-image-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-image{
+  width: 250px;
+  margin: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image img{
+  height: 250px;
+}
