@@ -268,6 +268,19 @@ header {
   float: left;
 }
 
+.banner.three{
+  height: 90vh;
+  width: 50%;
+  float: left;
+  min-height: 350px;
+  background: no-repeat center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
 .banner-title {
   font-family: Tiemann, serif;
   font-weight: 100;
