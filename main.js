@@ -1,5 +1,6 @@
 var navbar = document.getElementById("headerTwo");
 
+
   window.onscroll = function(){
     scrollFunction()
   };
@@ -15,3 +16,5 @@ var navbar = document.getElementById("headerTwo");
       navbar.style.top = "0px";
   }
 }
+
+

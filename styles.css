@@ -4,6 +4,7 @@ html {
   background-color: white;
   overflow-x: hidden;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -970,10 +971,16 @@ label{
   width: 700px;
 }
 
+footer{
+  width: 100%;
+  background-color: lightgray;
+}
+
 .footer-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 45vh;
 }
 
 .footer-image-container{
@@ -983,8 +990,25 @@ label{
   justify-content: center;
 }
 
+.footer-follow{
+  position: absolute;
+}
+
+.footer-follow-box{
+  padding: 1em 3em;
+  background-color: lightgray;
+}
+
+.footer-follow-box a{
+  color: #000;
+  font-family: "Tiemann", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .footer-image{
-  width: 250px;
+  width: 225px;
   margin: 5px;
   overflow: hidden;
   display: flex;
@@ -993,5 +1017,69 @@ label{
 }
 
 .footer-image img{
-  height: 250px;
+  height: 225px;
+}
+
+.footer-text-copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-text-copyright p{
+  margin-bottom: 1em;
+  font-family: Tiemann, sans-serif;
+  color: #000 !important;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+}
+
+.footer-text-copyright a{
+  color: #000;
+}
+
+.footer-menu{
+  text-align: center;
+}
+
+.footer-menu h3{
+  font-family: Tiemann;
+  letter-spacing: 3px;
+  font-size: 1.7em;
+}
+
+.footer-menu li{
+  list-style-type: none;
+  margin: 1.5em 0em;
+}
+
+.footer-menu a{
+  color: #000;
+  font-family: 'montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.footer-text-container h1{
+  font-family: Tiemann;
+  letter-spacing: 3px;
+  margin-bottom: 0.5em;
+}
+
+.social-footer i{
+  font-size: 1.5em;
+  margin: 0.5em 0.5em 0.5em 0em;
+}
+
+.line-1{
+  margin-bottom: 0.7em !important;
+}
+
+.line-1 hr{
+  height: 1px !important;
+  border: none;
 }
