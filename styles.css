@@ -180,6 +180,7 @@ header {
   padding: 20px 15px;
   padding-top: 3px;
   justify-content: center !important;
+  flex-wrap: wrap;
 }
 
 .navbar.two a {
@@ -675,11 +676,29 @@ header {
   padding: 1rem;
 }
 
+.logo-small{
+  display: none;
+  height: 3em;
+}
+
+.logo-big{
+  display: block;
+}
+
 @media (min-width: 768px) {
   .responsive-two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+  }
+}
+
+@media (max-width: 1068px){
+  .logo-small{
+    display: block;
+  }
+  .logo-big{
+    display: none;
   }
 }
 
@@ -971,6 +990,8 @@ label{
   width: 700px;
 }
 
+/* Footer CSS */
+
 footer{
   width: 100%;
   background-color: lightgray;
@@ -992,6 +1013,8 @@ footer{
 
 .footer-follow{
   position: absolute;
+  cursor: pointer;
+  user-select: none;
 }
 
 .footer-follow-box{
@@ -1031,7 +1054,7 @@ footer{
   margin-bottom: 1em;
   font-family: Tiemann, sans-serif;
   color: #000 !important;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 0.9em;
 }
 
@@ -1058,7 +1081,7 @@ footer{
   color: #000;
   font-family: 'montserrat', sans-serif;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
