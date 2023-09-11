@@ -2,281 +2,281 @@ export const images = [
     {
         title: "Photo",
         source: "Website/Watermarked/Image 1",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 2",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Flower"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 3",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 4",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "BW"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 5",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "LE"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 6",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cat"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 7",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cat"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 8",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 9",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 10",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 11",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 12",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 13",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 14",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 15",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 16",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Flower"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 17",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Wildlife"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 18",
-        price: "$67",
-        orientation: "Landscape",
-        collection: "Cows"
+        price: "$68",
+        orientation: "Portrait",
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 19",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "BW"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 20",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 21",
-        price: "$67",
-        orientation: "Landscape",
-        collection: "Cows"
+        price: "$5",
+        orientation: "Portrait",
+        collection: "Dog"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 22",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Flower"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 23",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Flower"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 24",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Wildlife"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 25",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "LE"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 26",
-        price: "$67",
-        orientation: "Landscape",
-        collection: "Cows"
+        price: "$56",
+        orientation: "Portrait",
+        collection: "Wildlife"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 27",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 28",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 29",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 30",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 31",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "Cow"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 32",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "BW"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 33",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "New"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 34",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "New"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 35",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "LE"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 36",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "BW"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 37",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "LE"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 38",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "New"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 39",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "New"
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 40",
-        price: "$67",
+        price: "$68",
         orientation: "Landscape",
-        collection: "Cows"
+        collection: "BW"
     }
 ];
