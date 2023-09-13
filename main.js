@@ -17,4 +17,3 @@ var navbar = document.getElementById("headerTwo");
   }
 }
 
-

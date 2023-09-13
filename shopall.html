@@ -47,7 +47,8 @@
           </div>
           <div class="logotext">
             <li class="navbar-item logoimage">
-              <a class="navbar-item" href="index.html"><img class="logo-big" style="width: 400px" src="Logo Text.svg" /><img class="logo-small" src="Logo.svg"></a>
+              <a class="navbar-item" href="index.html"><img class="logo-big" style="width: 400px"
+                  src="Logo Text.svg" /><img class="logo-small" src="Logo.svg"></a>
             </li>
           </div>
           <li class="navbar-item bag">
@@ -125,6 +126,8 @@
     </header>
   </header>
 
+<div class="shop-all">
+  <div class="shop-all-container">
   <div class="shop-bar">
     <div class="title">
       <h1>Shop Below</h1>
@@ -132,23 +135,33 @@
   </div>
   <div class="shop-filters">
     <p>Filters:</p>
-  <div class="filters">
-    <select>
-      <option>Collection...</option>
-      <option>New</option>
-      <option>Limited Edition</option>
-      <option>Landscape Images</option>
-      <option>Favourites</option>
-      <option>Black and White</option>
-      <option>Flowers</option>
-      <option>Dogs</option>
-      <option>Cats</option>
-      <option>Wildlife</option>
-    </select>
+    <div class="filters">
+      <select class="col-3">
+        <option>Choose Collection...</option>
+        <option onclick="All()">All</option>
+        <option onclick="New()">New</option>
+        <option onclick="LE()">Limited Edition</option>
+        <option onclick="LI()">Landscape Images</option>
+        <option onclick="Favourite()">Favourites</option>
+        <option onclick="BW()">Black and White</option>
+        <option onclick="Flowers()">Flowers</option>
+        <option onclick="Dogs()">Dogs</option>
+        <option onclick="Cats()">Cats</option>
+        <option onclick="Wildlife()">Wildlife</option>
+      </select>
 
-    <select>
-      <option>Orientation...</option>
-      <option>Portrait</option>
-      <option>Landscape</option>
-    </select>
+      <select>
+        <option onclick="">Orientation...</option>
+        <option onclick="">Portrait</option>
+        <option onclick="">Landscape</option>
+      </select>
+    </div>
+  </div>
+<div class="shop-container">
+    <div id="shop"></div>
+  </div>
 </div>
+</div>
+
+    <script src="main.js"></script>
+    <script type="module" src="shop.js"></script>
