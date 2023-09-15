@@ -11,7 +11,7 @@ export const images = [
         source: "Website/Watermarked/Image 2.jpg",
         price: "$68",
         orientation: "Landscape",
-        collection: ["Flower" , "All"]
+        collection: ["Flowers" , "All"]
     },
     {
         title: "Photo",
@@ -109,7 +109,7 @@ export const images = [
         source: "Website/Watermarked/Image 16.jpg",
         price: "$68",
         orientation: "Landscape",
-        collection: ["Flower" , "All"]
+        collection: ["Flowers" , "All"]
     },
     {
         title: "Photo",
@@ -151,14 +151,14 @@ export const images = [
         source: "Website/Watermarked/Image 22.jpg",
         price: "$68",
         orientation: "Landscape",
-        collection: ["Flower" , "All"]
+        collection: ["Flowers" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 23.jpg",
         price: "$68",
         orientation: "Landscape",
-        collection: ["Flower" , "All"]
+        collection: ["Flowers" , "All"]
     },
     {
         title: "Photo",
