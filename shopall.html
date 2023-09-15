@@ -119,7 +119,7 @@
             <a class="navbar-a-item" href="about.html">About</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-a-item" style="cursor: pointer" onclick="scrollBottom()">Socials</a>
+            <a class="navbar-a-item" style="cursor: pointer"k="scrollBottom()">Socials</a>
           </li>
         </ul>
       </div>
@@ -136,32 +136,34 @@
   <div class="shop-filters">
     <p>Filters:</p>
     <div class="filters">
-      <select class="col-3">
+      <select class="col-3" id="options">
         <option>Choose Collection...</option>
-        <option onclick="All()">All</option>
-        <option onclick="New()">New</option>
-        <option onclick="LE()">Limited Edition</option>
-        <option onclick="LI()">Landscape Images</option>
-        <option onclick="Favourite()">Favourites</option>
-        <option onclick="BW()">Black and White</option>
-        <option onclick="Flowers()">Flowers</option>
-        <option onclick="Dogs()">Dogs</option>
-        <option onclick="Cats()">Cats</option>
-        <option onclick="Wildlife()">Wildlife</option>
+        <option href="shopall.html">All</option>
+        <option href="Shop Html/New.html">New</option>
+        <option href="Shop Html/LE.html">Limited Edition</option>
+        <option href="Shop Html/LI.html">Landscape Images</option>
+        <option href="Shop Html/Favorites.html">Favourites</option>
+        <option href="Shop Html/BW.html">Black and White</option>
+        <option href="Shop Html/Flowers.html">Flowers</option>
+        <option href="Shop Html/Dogs.html">Dogs</option>
+        <option href="Shop Html/Cats.html">Cats</option>
+        <option href="Shop Html/Wildlife.html">Wildlife</option>
       </select>
 
       <select>
-        <option onclick="">Orientation...</option>
-        <option onclick="">Portrait</option>
-        <option onclick="">Landscape</option>
+        <option>Orientation...</option>
+        <option href="Shop Html/Portrait.html">Portrait</option>
+        <option href="Shop Html/Landscape.html">Landscape</option>
       </select>
     </div>
   </div>
 <div class="shop-container">
-    <div id="shop"></div>
+    <div id="shop">
+
+    </div>
   </div>
 </div>
 </div>
 
     <script src="main.js"></script>
-    <script type="module" src="shop.js"></script>
+    <script type="module" src="JS/shop.js"></script>
