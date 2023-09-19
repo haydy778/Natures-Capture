@@ -1,4 +1,5 @@
 var navbar = document.getElementById("headerTwo");
+var filter = document.getElementById("fil")
 
 
   window.onscroll = function(){
@@ -17,3 +18,12 @@ var navbar = document.getElementById("headerTwo");
   }
 }
 
+
+function openFilter() {
+  if(filter.style.display == 'flex'){
+    filter.style.display = 'none';
+  }
+  else{
+    filter.style.display = 'flex';
+  }
+}

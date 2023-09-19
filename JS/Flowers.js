@@ -22,7 +22,7 @@ function addImageCard(image, index) {
     img.classList.add('image-product');
     textContainer.classList.add('text-price-orientation');
     price.classList.add('price');
-    name.classList.add('name')
+    name.classList.add('name');
 
     price.appendChild(document.createTextNode(image.price));
     name.appendChild(document.createTextNode(image.title));
