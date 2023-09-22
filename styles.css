@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
 
+@font-face {
+  font-family: Tiemann-Light;
+  src: url(Tiemann\ Light\ Regular.ttf);
+}
+
 html {
   background-color: white;
   overflow-x: hidden;
@@ -1164,68 +1169,94 @@ footer {
 }
 
 .product {
-  display: inline-block;
-  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 450px;
   margin: 10px;
   background-color: white;
-  box-shadow: 0 0 15px rgb(0 0 0 / 25%);
-  overflow: hidden;
   user-select: none;
   transition: all 0.25s ease-in-out;
-  margin: 15px 20px;
-  z-index: -99;
-
+  margin: 55px 0px;
+  z-index: 0;
+  cursor: pointer;
+  outline: 0.75px solid #333;
+  outline-offset: 10px;
 }
 
-.product:hover {
-  transform: scale(1.05);
+.product:hover .image-product-container {
+  transform: scale(1.04);
+}
+
+.shop-all{
+  display: flex;
+  justify-content: center;
 }
 
 #shop {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: -1.5em;
+  margin-left: 0em;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   user-select: none;
-  max-width: 110em;
 }
 
 .image-product-container {
-  width: 100%;
+  width: 300px;
   height: 300px;
+  margin-bottom: 5px;
   user-select: none;
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin-top: auto;
+  justify-content: center;
+  margin-top: 0px;
+  background: no-repeat center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover !important;
+  transition: all 0.4s;
+ 
 }
 
-.image-product-container img {
-  height: auto;
-  width: 100%;
-  user-select: none;
+.text-price-orientation {
   text-align: center;
-  display: block;
-}
-
-.text-price-orientation p {
-  text-align: left;
   margin-bottom: 0px;
-  margin-left: 10px;
   user-select: none;
 }
+
+
+.name{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  user-select: none;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.product:hover .name{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 
 .price {
   color: black;
-  font-family: 'Tiemann';
-  font-size: 25px;
+  font-family: 'Tiemann-Light';
+  font-size: 18px;
   font-weight: bold;
   user-select: none;
   margin-top: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .shop-all-container{
@@ -1246,8 +1277,22 @@ footer {
   background-color: white;
   flex-direction: column;
   list-style-type: none;
-  width: 250px;
-  padding: 1.5em;
+  width: 225px;
+  padding: 0em 1.5em 1em 1.5em;
+  margin-left: -1.3em;
+  z-index: 1;
+}
+
+#or{
+  display: none;
+  position: absolute;
+  background-color: white;
+  flex-direction: column;
+  list-style-type: none;
+  width: 200px !important;
+  padding: 0em 1.5em 1em 1.5em;
+  margin-left: -1.3em;
+  z-index: 1;
 }
 
 .fil-container li{
@@ -1259,7 +1304,7 @@ footer {
   font-family: 'montserrat';
   font-size: 13px;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
