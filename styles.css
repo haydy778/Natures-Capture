@@ -1174,12 +1174,11 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 350px;
-  height: 450px;
-  margin: 10px;
+  height: 475px;
   background-color: white;
   user-select: none;
   transition: all 0.25s ease-in-out;
-  margin: 55px 0px;
+  margin: 55px 25px;
   z-index: 0;
   cursor: pointer;
   outline: 0.75px solid #333;
@@ -1197,7 +1196,7 @@ footer {
 
 #shop {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 0em;
   text-align: center;
@@ -1263,7 +1262,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 80%;
+  width: 88%;
 }
 
 .shop-all{
@@ -1324,4 +1323,11 @@ footer {
   letter-spacing: 1px;
   user-select: none;
   cursor: pointer;
+}
+
+.background{
+  position: absolute;
+  background-color: #b87354;
+  height: 100%;
+  width: 100%;
 }
