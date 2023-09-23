@@ -22,8 +22,6 @@ function addImageCard(image, index) {
         price.classList.add('price');
         name.classList.add('name')
 
-        product.onclick = "openPage()";
-
         price.appendChild(document.createTextNode(image.price));
         name.appendChild(document.createTextNode(image.title));
         product.id = index;
