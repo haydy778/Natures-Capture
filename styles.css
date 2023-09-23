@@ -1174,13 +1174,12 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 350px;
-  height: 475px;
+  height: 500px;
   background-color: white;
   user-select: none;
   transition: all 0.25s ease-in-out;
   margin: 55px 25px;
   z-index: 0;
-  cursor: pointer;
   outline: 0.75px solid #333;
   outline-offset: 10px;
 }
@@ -1221,6 +1220,7 @@ footer {
   -o-background-size: cover;
   background-size: cover !important;
   transition: all 0.4s;
+  cursor: pointer;
  
 }
 
@@ -1331,3 +1331,24 @@ footer {
   height: 100%;
   width: 100%;
 }
+
+.addcart{
+  margin-top: 20px;
+  border: none;
+  font-family: 'montserrat';
+  letter-spacing: 1px;
+  border-radius: 0px;
+  transition: all 0.3s;
+  padding: 1em 1.8em;
+  color: white;
+  background-color: #b87354;
+  text-decoration-line: none;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.addcart:hover{
+  background-color: #606060;
+}
+
