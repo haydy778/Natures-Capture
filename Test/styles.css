@@ -1,0 +1,84 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the cart button */
+#cart-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Styles for the cart drawer */
+#cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start off hidden to the right */
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+/* Styles for the cart header */
+.cart-header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2 {
+    margin: 0;
+}
+
+/* Style for the close button */
+#close-cart {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-items {
+    padding: 20px;
+}
+
+/* Example styles for cart items (customize as needed) */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item .item-remove {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* Show the cart drawer */
+.cart-open {
+    right: 0;
+}
