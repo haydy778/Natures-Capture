@@ -40,8 +40,6 @@ function openOrientation() {
   }
 }
 
-
-
 const overlay = document.createElement('div');
 overlay.classList.add('overlay');
 document.body.appendChild(overlay);
@@ -64,6 +62,9 @@ function enlargeImageContainer(imageContainer) {
 
   imageContainer.style.transform = 'scale(1.2)';
 
+  const closeButton = imageContainer.querySelector('.close-button');
+
+  if(!closeButton){
   const closeButton = document.createElement('button');
   closeButton.classList.add('close-button');
   closeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
@@ -73,6 +74,7 @@ function enlargeImageContainer(imageContainer) {
     event.stopPropagation();
     closeEnlargedContainer(imageContainer);
   });
+}
 }
 
 function closeEnlargedContainer(imageContainer) {
@@ -98,6 +100,3 @@ function closeEnlargedContainer(imageContainer) {
   }
 
 }
-
-
-
