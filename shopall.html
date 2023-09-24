@@ -52,7 +52,7 @@
             </li>
           </div>
           <li class="navbar-item bag">
-            <a class="navbar-item bag" href="index.html">
+            <a class="navbar-item bag" href="#">
               <i class="fa-solid fa-bag-shopping"></i>
             </a>
           </li>
@@ -127,11 +127,13 @@
       </div>
     </header>
   </header>
-  <header class="cart-container">
-    <div class="cart">
+
+  <div class="cart-container" id="cartDrawer">
+    <i class="fa-solid fa-xmark" id="cartClose"></i>
+    <div class="cart" id="cartItems">
       
     </div>
-  </header>
+  </div>
 
   <div class="shop-all">
     <div class="shop-all-container">
@@ -196,8 +198,7 @@
     </div>
   </div>
 
-  <script src="main.js"></script>
   <script type="module" src="JS/shop.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>

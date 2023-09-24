@@ -1,7 +1,6 @@
 import { images } from '../data.js';
 
 const productGrid = document.getElementById("shop");
-const cart = [];
 
 images.map((image, index) => {
     addImageCard(image, index);
@@ -47,9 +46,3 @@ function addImageCard(image, index) {
     }
 }
 
-function addToCart(product) {
-    cart.push(product);
-    // You can add additional logic here, like updating the cart UI.
-    // For simplicity, you can log the cart items to the console.
-    console.log('Item added to cart:', product.title);
-}

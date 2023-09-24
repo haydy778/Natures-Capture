@@ -1,8 +1,8 @@
-
 var navbar = document.getElementById("headerTwo");
 var filter = document.getElementById("fil")
 var or = document.getElementById("or")
-
+const cart = [];
+const cartItems = document.getElementById('cartItems');
 
 
 window.onscroll = function () {
@@ -100,3 +100,27 @@ function closeEnlargedContainer(imageContainer) {
   }
 
 }
+
+function addToCart(product) {
+  cart.push(product.title);
+  console.log('Item added to cart:', product.title);
+  // Update the cart display
+  updateCartDisplay();
+}
+
+
+// Cart Drawer Open/Close Functions
+const cartButton = document.getElementById('cartButton');
+const cartDraw = document.getElementById('cartDrawer');
+const cartClose = document.getElementById('cartClose');
+
+cartButton.addEventListener('click', () => {
+  cartDraw.classList.add('open-cart');
+});
+
+cartClose.addEventListener('click', () => {
+  cartDraw.classList.remove('open-cart');
+});
+
+
+
