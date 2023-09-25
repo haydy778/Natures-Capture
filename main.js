@@ -1,3 +1,125 @@
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
+    <header class="navigation-bar">
+    <header class="top-header">
+      <div class="navbar-container">
+        <ul class="navbar one" id="j">
+          <div class="dropdown-menu-header">
+            <ul class="contactbtn">
+              <li class="contact">
+                <a class="navbar-item" href="contact.html">
+                  <!-- <i class="fa-brands fa-pinterest"></i> -->Contact Me
+                </a>
+              </li>
+              <!-- <li>
+                            <a class="dropdown-item" href="Blank.html">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Blank.html">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li> -->
+            </ul>
+          </div>
+          <div class="logotext">
+            <li class="navbar-item logoimage">
+              <a class="navbar-item" href="index.html"><img class="logo-big" style="width: 400px" src="Logo Text.svg" /><img class="logo-small" src="Logo.svg"></a>
+            </li>
+          </div>
+          <li class="navbar-item bag">
+            <a class="navbar-item bag" href="#" id="cartButton">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <header class="header-two" id="headerTwo">
+      <div class="navbar-container">
+        <ul class="navbar two" id="navbar">
+          <li class="navbar-item">
+            <a class="navbar-a-item" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-a-item" href="shopall.html">Shop All</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-a-item" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar-item dropdown-menu-name">
+            <a href="shopall.html" class="navbar-a-item dropdown-menu-name-a">
+              Collections <i class="fa-solid fa-chevron-down"></i>
+              <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            </a>
+            <div class="dropdown-menu-header drop">
+              <ul class="header-menu__dropdown-nav">
+                <li>
+                  <a class="dropdown-item" href="New.html"> New </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="LE.html">
+                    Limited Edition
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="LI.html">
+                    Landscape Images
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Favourites.html"> Favourites </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="BW.html">
+                    Black and White
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Flowers.html"> Flowers </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Dogs.html"> Dogs </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Cats.html"> Cats </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Wildlife.html"> Wildlife </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-a-item" href="about.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-a-item" style="cursor: pointer" onclick="scrollBottom()">Socials</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </header>
+  <div class="cart-container" id="cartDrawer">
+    <i class="fa-solid fa-xmark" id="cartClose"></i>
+    <div class="cart" id="cartItems">
+      
+    </div>
+  </div>
+    `;
+  }
+}
+
+customElements.define('header-component', Header);
+
+
 var navbar = document.getElementById("headerTwo");
 var filter = document.getElementById("fil")
 var or = document.getElementById("or")
@@ -102,11 +224,12 @@ function closeEnlargedContainer(imageContainer) {
 }
 
 function addToCart(product) {
-  cart.push(product.title);
-  console.log('Item added to cart:', product.title);
-  // Update the cart display
-  updateCartDisplay();
+  cart.push(product);
+  localStorage.setItem('cart', product);
+  console.log('Item added to cart:', product);
 }
+
+localStorage.getItem('cart' , cartArray);
 
 
 // Cart Drawer Open/Close Functions
@@ -121,6 +244,8 @@ cartButton.addEventListener('click', () => {
 cartClose.addEventListener('click', () => {
   cartDraw.classList.remove('open-cart');
 });
+
+
 
 
 
