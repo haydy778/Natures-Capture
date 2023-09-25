@@ -1139,6 +1139,7 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-top: 2em;
+  width: 100%;
 }
 
 .shop-filters p {
@@ -1151,6 +1152,23 @@ footer {
   margin-right: 0.6em;
   font-family: 'montserrat';
   letter-spacing: 1px;
+}
+
+.search-container{
+  margin-left: auto;
+}
+
+.search{
+  padding: 1em 1em;
+  width: 18em;
+  font-family: 'montserrat', sans-serif;
+  border: 1px solid #000;
+  border-radius: 0px;
+  filter: grayscale(100%);
+}
+
+.search:focus{
+  outline: 0.5px solid #000;
 }
 
 .shop-bar .title {
@@ -1168,22 +1186,24 @@ footer {
 
 .shop-container{
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
+
+
 
 .product {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 360px;
-  height: 520px;
+  width: 370px;
+  height: 530px;
   background-color: white;
   user-select: none;
   transition: all 0.25s ease-in-out;
-  margin: 55px 25px;
+  margin: 55px 20px;
   outline: 0.75px solid #333;
-  outline-offset: 10px;
+  outline-offset: 0px;
 }
 
 .image-product-container:hover{
@@ -1193,6 +1213,7 @@ footer {
 .shop-all{
   display: flex;
   justify-content: center;
+
 }
 
 #shop {
@@ -1257,8 +1278,8 @@ footer {
 .shop-all-container{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 88%;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .shop-all{
@@ -1557,3 +1578,4 @@ footer {
   cursor: pointer;
   user-select: none;
 }
+
