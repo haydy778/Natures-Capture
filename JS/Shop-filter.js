@@ -1,7 +1,8 @@
 import { images } from './data.js';
+
 const productGrid = document.getElementById("shop");
-var filter = document.getElementById("fil")
-var or = document.getElementById("or")
+var filter = document.getElementById("fil");
+var or = document.getElementById("or");
 
 document.addEventListener('DOMContentLoaded', function () {
   const filterButtons = document.querySelectorAll('.dropdown-item');
@@ -11,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       const selectedCategory = button.textContent.trim();
-      filterItems(selectedCategory);
+      const searchTerm = searchBar.value.toLowerCase().trim();
+      filterItems(selectedCategory, searchTerm);
       or.style.display = 'none';
       filter.style.display = 'none';
     })
@@ -26,15 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
     filterItems(selectedCategory, searchTerm);
   });
 
-  function filterItems(category, searchTerm) {
-
+  function filterItems(selectedCategory, searchTerm) {
     const filteredImages = images.filter((image) => {
       return (
         (searchTerm === '' || image.title.toLowerCase().includes(searchTerm)) &&
-        (category === "All" || 
-        image.collection.includes(category) ||
-        (category === "Landscape" && image.orientation === "Landscape") ||
-        (category === "Portrait" && image.orientation === "Portrait"))
+        (selectedCategory === "All" || 
+        image.collection.includes(selectedCategory) ||
+        (selectedCategory === "Landscape" && image.orientation === "Landscape") ||
+        (selectedCategory === "Portrait" && image.orientation === "Portrait"))
         )
     });
     displayImages(filteredImages);
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function displayImages(filteredImages) {
     productGrid.innerHTML = "";
+    console.log(filteredImages);
 
     filteredImages.forEach((image) => {
       const product = document.createElement('div');
