@@ -1,13 +1,43 @@
 import { images } from '../data.js';
+const productGrid = document.getElementById("shop");
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
+
+//     images.map((image, index) => {
+//         addImageCard(image, index);
+//     });
     
-    images.map((image, index) => {
-        addImageCard(image, index);
-    });
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.dropdown-item');
     
-    function addImageCard(image, index) {
-        if (image.collection.includes('All')) {
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const selectedCategory = button.textContent.trim();
+        filterItems(selectedCategory);
+      })
+    })
+    
+    function filterItems(category) {
+      console.log(category)
+      const filteredImages = images.filter((image) => {
+        return (
+            category === "All" ||
+            image.collection.includes(category) ||
+            (category === "Landscape" && image.orientation === "Landscape") ||
+            (category === "Portrait" && image.orientation === "Portrait")
+          );
+      });
+      console.log(category) 
+      // Display the filtered images
+      displayImages(filteredImages);
+    }
+    
+    function displayImages(filteredImages) {
+      productGrid.innerHTML = "";
+    
+      filteredImages.forEach((image) => {
             const product = document.createElement('div');
             const imageContainer = document.createElement('div');
             const textContainer = document.createElement('div');
@@ -26,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name.appendChild(document.createTextNode(image.title));
             addcartButton.appendChild(document.createTextNode("Add To Cart"));
     
-            product.id = index;
+            product.id = image;
             imageContainer.style.background = "url('" + image.source + "') no-repeat center scroll";
     
             textContainer.appendChild(name);
@@ -44,7 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
             imageContainer.addEventListener('click', () => {
                 enlargeImageContainer(imageContainer);
             });
-        }
+      });
     }
     
-});
+    // Initially, show all images
+    filterItems("All");
+    });

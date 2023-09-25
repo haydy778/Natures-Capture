@@ -2,7 +2,12 @@
 
 @font-face {
   font-family: Tiemann-Light;
-  src: url(Tiemann\ Light\ Regular.ttf);
+  src: url(Materials/Tiemann\ Light\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Tiemann;
+  src: url(Materials/Tiemann\ Roman.ttf);
 }
 
 html {
@@ -243,10 +248,7 @@ header {
 
 /* Nav Info */
 
-@font-face {
-  font-family: Tiemann;
-  src: url(Tiemann\ Roman.ttf);
-}
+
 
 .bannner-container {
   overflow: hidden;
@@ -1360,13 +1362,17 @@ footer {
 .close-button {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   background: transparent;
   border: none;
   font-size: 30px;
   color: #fff;
   cursor: pointer;
   z-index: 10000;
+}
+
+#cartClose{
+  left: 10px !important;
 }
 
 /* Cart Css */
@@ -1545,4 +1551,9 @@ footer {
   border-style: none;
   cursor: pointer;
   font-size: 20px;
+}
+
+.dropdown-item{
+  cursor: pointer;
+  user-select: none;
 }

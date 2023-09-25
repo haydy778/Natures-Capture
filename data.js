@@ -18,70 +18,70 @@ export const images = [
         source: "Website/Watermarked/Image 3.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 4.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["BW" , "All"]
+        collection: ["Black and White" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 5.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["LE" , "All"]
+        collection: ["Limited Edition" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 6.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Cat" , "All"]
+        collection: ["Cats" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 7.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Cat" , "All"]
+        collection: ["Cats" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 8.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 9.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 10.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 11.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 12.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
@@ -123,28 +123,28 @@ export const images = [
         source: "Website/Watermarked/Image 18.jpg",
         price: "$50 NZD",
         orientation: "Portrait",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 19.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["BW" , "All"]
+        collection: ["Black and White" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 20.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 21.jpg",
         price: "$50 NZD",
         orientation: "Portrait",
-        collection: ["Dog" , "All"]
+        collection: ["Dogs" , "All"]
     },
     {
         title: "Photo",
@@ -172,7 +172,7 @@ export const images = [
         source: "Website/Watermarked/Image 25.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["LE" , "All"]
+        collection: ["Limited Edition" , "All"]
     },
     {
         title: "Photo",
@@ -221,7 +221,7 @@ export const images = [
         source: "Website/Watermarked/Image 32.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["BW" , "All"]
+        collection: ["Black and White" , "All"]
     },
     {
         title: "Photo",
@@ -242,21 +242,21 @@ export const images = [
         source: "Website/Watermarked/Image 35.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["LE" , "All"]
+        collection: ["Limited Edition" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 36.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["BW" , "All"]
+        collection: ["Black and White" , "All"]
     },
     {
         title: "Photo",
         source: "Website/Watermarked/Image 37.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["LE" , "All"]
+        collection: ["Limited Edition" , "All"]
     },
     {
         title: "Photo",
@@ -277,6 +277,6 @@ export const images = [
         source: "Website/Watermarked/Image 40.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
-        collection: ["BW" , "All"]
+        collection: ["Black and White" , "All"]
     }
 ];

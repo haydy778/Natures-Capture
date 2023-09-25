@@ -30,7 +30,7 @@ class Header extends HTMLElement {
           </div>
           <div class="logotext">
             <li class="navbar-item logoimage">
-              <a class="navbar-item" href="index.html"><img class="logo-big" style="width: 400px" src="Logo Text.svg" /><img class="logo-small" src="Logo.svg"></a>
+              <a class="navbar-item" href="index.html"><img class="logo-big" style="width: 400px" src="Materials/Logo Text.svg" /><img class="logo-small" src="Materials/Logo.svg"></a>
             </li>
           </div>
           <li class="navbar-item bag">
@@ -225,7 +225,6 @@ function closeEnlargedContainer(imageContainer) {
 
 
 
-const productGrid = document.getElementById("shop");
 let cart = JSON.parse(localStorage.getItem('cart')) || []; // Load cart data from localStorage
 const cartItemsContainer = document.getElementById("cartItems");
 const cartDraw = document.getElementById('cartDrawer');
@@ -376,9 +375,3 @@ if (cartClose) {
     cartDraw.classList.remove('open-cart');
   });
 }
-
-
-
-
-
-
