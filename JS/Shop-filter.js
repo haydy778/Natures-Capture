@@ -1,4 +1,4 @@
-import { images } from '../data.js';
+import { images } from './data.js';
 const productGrid = document.getElementById("shop");
 
 // document.addEventListener('DOMContentLoaded', () => {
