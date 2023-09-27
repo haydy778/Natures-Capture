@@ -1,3 +1,25 @@
+
+
+function statusMessage(){
+  const status = document.getElementById('status');
+const overlay = document.getElementById('overlay')
+setTimeout(() => {
+  status.style.opacity = '1';
+  overlay.style.opacity = '1';
+  status.style.zIndex = "9";
+  overlay.style.zIndex = "8";
+}, 3000);
+
+}
+function closeMessage(){
+  const status = document.getElementById('status')
+  const overlay = document.getElementById('overlay')
+
+  status.style.opacity = "0";
+  overlay.style.display = 'none';
+  
+}
+
 // Define a custom HTML element called 'header-component'
 class Header extends HTMLElement {
   constructor() {
@@ -331,9 +353,13 @@ function renderCart() {
       Checkout.classList.add('cart-checkout');
       totalContainer.classList.add('cart-total-container');
 
-      Checkout.setAttribute('href', 'checkout.html');
+      Checkout.setAttribute('href', '#');
       totalPriceElement.innerHTML = `Total Price: $${totalPrice.toFixed(2)}`;
       Checkout.innerHTML = "Checkout";
+
+      Checkout.addEventListener('click', () => {
+        alert('This feature is not currently available');
+      })
 
       cartItemsContainer.appendChild(totalContainer);
       totalContainer.appendChild(totalPriceElement);
@@ -401,3 +427,4 @@ if (cartClose) {
     cartDraw.classList.remove('open-cart');
   });
 }
+

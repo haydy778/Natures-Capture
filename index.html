@@ -20,7 +20,18 @@
   </div>
 </header>
 
-<body>
+<body onload="statusMessage()">
+  <div id="status">
+    <img src="Website/13.1.jpg">
+    <div>
+      <i style="z-index: 9999;" onclick="closeMessage()" class="fa-solid fa-xmark closeButton"></i>
+      <h1>Sorry to inform you</h1>
+      <p>We are not currently fully operational.</p>
+      <p class="status-bottom">All our images are free to have a browse at but there are still a few bugs and products can not be bought at this time.</p>
+      <a onclick="closeMessage()" class="continue" href="#">Continue</a>
+    </div>
+  </div>
+  <div id="overlay"></div>
   <!-- Navbar HTML -->
   <header-component></header-component>
   <!-- Banner HTML -->
