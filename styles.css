@@ -1202,7 +1202,7 @@ footer {
   margin-bottom: 1em;
   font-family: Tiemann, sans-serif;
   color: #000000 !important;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 1em;
 }
 
@@ -1234,6 +1234,11 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+}
+
+.footer-menu a:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footer-text-container h1 {
