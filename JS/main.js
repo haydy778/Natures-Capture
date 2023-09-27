@@ -14,7 +14,6 @@ setTimeout(() => {
 function closeMessage(){
   const status = document.getElementById('status')
   const overlay = document.getElementById('overlay')
-
   status.style.opacity = "0";
   overlay.style.display = 'none';
   
