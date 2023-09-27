@@ -1,13 +1,26 @@
 // Notify user that the website isn't fully operational.
 function statusMessage() {
-  const status = document.getElementById('status');
-  const overlay = document.getElementById('overlay')
-  setTimeout(() => {
-    status.style.opacity = '1';
-    overlay.style.opacity = '1';
-    status.style.zIndex = "9";
-    overlay.style.zIndex = "8";
-  }, 100);
+  // Check if the flag is set in sessionStorage
+  if (!sessionStorage.getItem('statusMessageDisplayed')) {
+      const status = document.getElementById('status');
+      const overlay = document.getElementById('overlay');
+      setTimeout(() => {
+          status.style.opacity = '1';
+          overlay.style.opacity = '1';
+          status.style.zIndex = "9";
+          overlay.style.zIndex = "8";
+      }, 100);
+
+      // Set the flag in sessionStorage to indicate that the message has been displayed
+      sessionStorage.setItem('statusMessageDisplayed', 'true');
+  } else{
+    const status = document.getElementById('status');
+    const overlay = document.getElementById('overlay');
+    status.style.opacity = "0";
+    overlay.style.display = 'none';
+    status.style.zIndex = "-999";
+    overlay.style.zIndex = "-999";
+  }
 }
 
 function closeMessage() {
@@ -18,6 +31,9 @@ function closeMessage() {
   status.style.zIndex = "-999";
   overlay.style.zIndex = "-999";
 }
+
+document.body.onload = statusMessage;
+
 
 // Define a custom HTML element called 'header-component'
 class Header extends HTMLElement {
