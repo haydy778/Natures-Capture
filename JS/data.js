@@ -1,3 +1,4 @@
+// Store Array In seperate page and then export it
 export const images = [
     {
         title: "Wooly Watcher",
@@ -7,14 +8,14 @@ export const images = [
         collection: ["Cow" , "All"]
     },
     {
-        title: "Two of a Kind",
+        title: "Blooming",
         source: "Website/Watermarked/Image 2.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
         collection: ["Flowers" , "All"]
     },
     {
-        title: "Photo",
+        title: "Two of a Kind",
         source: "Website/Watermarked/Image 3.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
