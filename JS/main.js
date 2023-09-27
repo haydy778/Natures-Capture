@@ -1,5 +1,4 @@
-
-
+// Notify user that the website isn't fully operational.
 function statusMessage(){
   const status = document.getElementById('status');
 const overlay = document.getElementById('overlay')
@@ -16,7 +15,6 @@ function closeMessage(){
   const overlay = document.getElementById('overlay')
   status.style.opacity = "0";
   overlay.style.display = 'none';
-  
 }
 
 // Define a custom HTML element called 'header-component'
@@ -40,12 +38,12 @@ class Header extends HTMLElement {
                 </a>
               </li>
               <!-- <li>
-                            <a class="dropdown-item" data-category="" href="tml">
+                            <a class="dropdown-item">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" data-category="" href="tml">
+                            <a class="dropdown-item">
                                 <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li> -->
@@ -85,37 +83,37 @@ class Header extends HTMLElement {
             <div class="dropdown-menu-header drop">
               <ul class="header-menu__dropdown-nav">
                 <li>
-                  <a class="dropdown-item" data-category="New"> New </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="New"> New </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Limited Edition">
+                  <a class="dropdown-item" href="shopall.html" data-category="Limited Edition">
                     Limited Edition
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Landscape Images">
+                  <a class="dropdown-item" href="shopall.html" data-category="Landscape Images">
                     Landscape Images
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Favourites"> Favourites </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="Favourites"> Favourites </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Black and White">
+                  <a class="dropdown-item" href="shopall.html" data-category="Black and White">
                     Black and White
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Flowers"> Flowers </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="Flowers"> Flowers </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Dogs"> Dogs </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="Dogs"> Dogs </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Cats"> Cats </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="Cats"> Cats </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" data-category="Wildlife"> Wildlife </a>
+                  <a class="dropdown-item" href="shopall.html" data-category="Wildlife"> Wildlife </a>
                 </li>
               </ul>
             </div>
