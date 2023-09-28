@@ -1,7 +1,7 @@
 // Store Array In seperate page and then export it
 export const images = [
     {
-        title: "Wooly Watcher",
+        title: "Photo",
         source: "Website/Watermarked/Image 1.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
@@ -29,14 +29,14 @@ export const images = [
         collection: ["Black and White" , "All"]
     },
     {
-        title: "Photo",
+        title: "Wooly Watcher",
         source: "Website/Watermarked/Image 5.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
         collection: ["Limited Edition" , "All"]
     },
     {
-        title: "Photo",
+        title: "Purrfectly Hidden",
         source: "Website/Watermarked/Image 6.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
@@ -57,7 +57,7 @@ export const images = [
         collection: ["Dogs" , "All"]
     },
     {
-        title: "Photo",
+        title: "Splashing Hound",
         source: "Website/Watermarked/Image 9.jpg",
         price: "$68 NZD",
         orientation: "Landscape",
