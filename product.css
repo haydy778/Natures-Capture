@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the columns */
+.cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-5 {
+    flex: 1;
+}
+
+.col-4 {
+    flex: 1;
+}
+
+/* Style the featured image */
+.feat-wrap {
+    text-align: center;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the product title */
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Style the product type */
+.product-type {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Style the product price */
+.product-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style the select boxes */
+.selector-wrapper {
+    margin-top: 20px;
+}
+
+/* Style the "Add to Cart" button */
+.btn-std {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Style the live help text */
+.live-help-text-wrapper {
+    margin-top: 20px;
+}
+
+.live-help-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Style the link for sizing chart */
+.live-help-text a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.live-help-text a:hover {
+    text-decoration: underline;
+}
+
+/* Style the "Email Us" link */
+.fixed-live-chat {
+    display: flex;
+    align-items: center;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.fixed-live-chat svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Add more styles as needed */

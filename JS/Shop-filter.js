@@ -56,11 +56,21 @@ function filterItems(selectedCategory, searchTerm) {
   displayImages(filteredImages);
 }
 
+function getImageDimensions(imageSource) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      resolve({ width: img.width, height: img.height });
+    };
+    img.src = imageSource;
+  });
+}
+
 // Function to display the filtered images
 function displayImages(filteredImages) {
   productGrid.innerHTML = ""; // Clear the product grid
 
-  filteredImages.forEach((image) => {
+  filteredImages.forEach(async (image) => {
     // Create DOM elements for each image
     const product = document.createElement("div");
     const imageContainer = document.createElement("div");
@@ -84,6 +94,12 @@ function displayImages(filteredImages) {
 
     // Set the background image of the image container
     imageContainer.style.background = "url('" + image.source + "') no-repeat center scroll";
+    // Preload the image and get its dimensions
+    const imageDimensions = await getImageDimensions(image.source);
+    const aspectRatio = imageDimensions.width / imageDimensions.height;
+
+    // Set the aspect ratio as a data attribute
+    imageContainer.setAttribute("data-aspect-ratio", aspectRatio);
 
     // Append elements to the product grid
     textContainer.appendChild(name);

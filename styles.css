@@ -374,7 +374,6 @@ header {
 }
 
 /* Nav Info */
-
 .bannner-container {
   overflow: hidden;
   height: 90vh;
@@ -385,7 +384,7 @@ header {
 .banner-caption {
   top: 50% !important;
   position: absolute;
-  right: 5%;
+  right: 10%;
 }
 
 .banner {
@@ -644,11 +643,8 @@ header {
 }
 
 .addcart.two{
-  padding: 0em !important;
-  font-size: 20px;
+  font-size: 15px;
   box-shadow: none !important;
-  background-color: transparent !important;
-  color: #000;
 }
 
 /* Favourite Images CSS */
@@ -1097,6 +1093,10 @@ label {
   font-size: 1em;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.addcart.three{
+  margin-left: 3em;
 }
 
 

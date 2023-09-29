@@ -216,7 +216,7 @@ function enlargeImageContainer(imageContainer) {
   imageContainer.style.right = "0";
   imageContainer.style.marginLeft = 'auto';
   imageContainer.style.marginRight = 'auto';
-  imageContainer.style.width = '70%';
+  imageContainer.style.width = '60%';
   imageContainer.style.height = '70%';
   imageContainer.style.zIndex = '9999';
   imageContainer.style.cursor = 'default';
@@ -226,6 +226,19 @@ function enlargeImageContainer(imageContainer) {
 
   // Enlarge the image within the container
   imageContainer.style.transform = 'scale(1.2)';
+
+  const aspectRatio = parseFloat(imageContainer.getAttribute('data-aspect-ratio'));
+
+  
+  // Adjust container width based on aspect ratio
+  if (aspectRatio > 1) {
+    // Landscape image
+    imageContainer.style.width = '60%';
+  } else {
+    // Portrait image
+    imageContainer.style.width = '30%';
+    imageContainer.style.height = '75%';
+  }
 
   // Create and add a close button to the image container
   const closeButton = imageContainer.querySelector('.close-button');
