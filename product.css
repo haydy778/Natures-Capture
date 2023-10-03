@@ -1,110 +1,98 @@
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap");
+
+@font-face {
+  font-family: Tiemann-Light;
+  src: url(Materials/Tiemann\ Light\ Regular.ttf);
 }
 
-/* Style the container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+@font-face {
+  font-family: Tiemann;
+  src: url(Materials/Tiemann\ Roman.ttf);
 }
 
-/* Style the columns */
-.cols {
+.product-image{
+    width: 700px;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.col-5 {
-    flex: 1;
+.product-img {
+  width: 100%;
+  height: auto;
 }
 
-.col-4 {
-    flex: 1;
+.product-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 5em;
 }
 
-/* Style the featured image */
-.feat-wrap {
-    text-align: center;
+.product-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
-.featured-image {
-    max-width: 100%;
-    height: auto;
+.product-text-title h1 {
+  font-family: Tiemann-Light;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
 }
 
-/* Style the product title */
-h1 {
-    font-size: 24px;
-    margin-top: 20px;
+.product-text-price {
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 2em;
+  letter-spacing: 1px;
 }
 
-/* Style the product type */
-.product-type {
-    font-size: 18px;
-    color: #888;
+.product-text-price p {
+  color: rgb(68, 68, 68);
 }
 
-/* Style the product price */
-.product-price {
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 10px;
+.product-text-price .price {
+  color: black;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "montserrat", sans-serif;
 }
 
-/* Style the select boxes */
-.selector-wrapper {
-    margin-top: 20px;
+.print-title {
+  width: 600px;
+  border-bottom: 0.5px solid #000;
+  margin-bottom: 1em;
 }
 
-/* Style the "Add to Cart" button */
-.btn-std {
-    background-color: #007BFF;
+.print-title p {
+  font-family: "montserrat", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.button-container.four {
+    padding: 1em;
+    padding-left: 0px;
+    padding-bottom: 2em;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .button.four {
     color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
+    background-color: #b87454;
+    width: 170px;
+    font-size: 15px;
+  }
 
-/* Style the live help text */
-.live-help-text-wrapper {
-    margin-top: 20px;
-}
-
-.live-help-text {
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px;
-}
-
-/* Style the link for sizing chart */
-.live-help-text a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.live-help-text a:hover {
-    text-decoration: underline;
-}
-
-/* Style the "Email Us" link */
-.fixed-live-chat {
-    display: flex;
-    align-items: center;
-    color: #007BFF;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.fixed-live-chat svg {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-/* Add more styles as needed */
+  .button.four:hover{
+    background-color: #606060;
+  }
