@@ -165,6 +165,7 @@ customElements.define('header-component', Header);
 var navbar = document.getElementById("headerTwo");
 var filter = document.getElementById("fil");
 var or = document.getElementById("or");
+let banner = document.getElementById("banner");
 
 // Add scroll event listener to window
 window.onscroll = function () {
@@ -173,14 +174,16 @@ window.onscroll = function () {
 
 // Function to handle scrolling
 function scrollFunction() {
-  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+  if (document.body.scrollTop > 165 || document.documentElement.scrollTop > 165) {
     // If the page is scrolled down more than 120 pixels, fix the navbar at the top
     navbar.style.position = "fixed";
     navbar.style.top = "0";
+    banner.style.marginTop = "56.5px"
   } else {
     // If not, make the navbar relative again
     navbar.style.position = "relative";
     navbar.style.top = "0px";
+    banner.style.marginTop = "0px"
   }
 }
 

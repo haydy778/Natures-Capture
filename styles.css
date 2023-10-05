@@ -374,25 +374,28 @@ header {
 }
 
 /* Nav Info */
-.bannner-container {
+.banner-container {
   overflow: hidden;
   height: 90vh;
-  background-color: #f5f5f5;
+  background-color: #000;
   width: 100%;
+  z-index: -1;
 }
 
 .banner-caption {
   top: 50% !important;
   position: absolute;
-  right: 10%;
+  left: 10%;
 }
 
 .banner {
   height: 90vh;
-  width: 50%;
+  width: 100%;
   float: left;
   min-height: 350px;
   background: no-repeat center scroll;
+  transform: scaleX(-1);
+  opacity: 0.5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -401,18 +404,6 @@ header {
   background-color: #f5f5f5;
 }
 
-.banner.one {
-  height: 90vh;
-  width: 50%;
-  float: left;
-  min-height: 350px;
-  background: no-repeat left scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  transition: all 0.5s;
-}
 
 .banner.three {
   height: 90vh;
@@ -425,10 +416,6 @@ header {
   -o-background-size: cover;
   background-size: cover;
   transition: all 0.5s;
-}
-
-.banner.two {
-  float: left;
 }
 
 .banner.three {
@@ -448,24 +435,26 @@ header {
   font-family: Tiemann, serif;
   font-weight: 100;
   letter-spacing: 5px;
-  color: black;
-  font-size: 3.2em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3em;
   text-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   max-width: 500px;
 }
 
 .banner-text {
   font-family: "montserrat", serif;
-  color: black;
+  color: white;
   letter-spacing: 2px;
   font-size: 1em;
   text-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   max-width: 500px;
   margin-top: 1em;
+  
 }
 
 .banner-text.two {
-  color: #b87454;
+  color: #ffbd9e;
   font-size: 1em;
   font-weight: 900;
   text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
