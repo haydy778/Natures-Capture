@@ -49,6 +49,11 @@ class Header extends HTMLElement {
       <div class="navbar-container">
         <ul class="navbar one" id="j">
           <div class="dropdown-menu-header">
+          <li class="navbar-item burger">
+            <a class="navbar-item burger" href="#" id="burger">
+              <i id="faBars" class="fa-solid fa-bars" onclick="openHeader()"></i>
+            </a>
+          </li>
             <ul class="contactbtn">
               <li class="contact">
                 <a class="navbar-item" href="contact.html">
@@ -159,6 +164,23 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
+
+//Collapesed header open
+let collapsedHeader = document.getElementById('collapsedHeader');
+let icon = document.getElementById('faBars');
+
+function openHeader(){
+  if(collapsedHeader.style.transform == 'translateX(0%)'){
+    collapsedHeader.style.transform = 'translateX(-100%)'
+    icon.classList.add('fa-bars');
+    icon.classList.remover('fa-xmark');
+    document.body.style.overflowY = 'hidden';
+  }else{
+    collapsedHeader.style.transform = 'translateX(0%)'
+    icon.classList.add('fa-xmark');
+    icon.classList.remove('fa-bars');
+  }
+}
 
 
 // Get references to HTML elements

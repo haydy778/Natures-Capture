@@ -260,8 +260,6 @@ header {
 
 .navbar-item.bag {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
   width: 140px;
   margin-bottom: 5px;
   margin-right: 100px;
@@ -363,13 +361,58 @@ header {
   transform: scale(1);
 }
 
+#collapsedHeader{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  transform: translateX(-100%);
+  display: none;
+  transition: all 0.5s;
+}
+
+.burger{
+  display: none;
+  width: 100px;
+  cursor: default;
+}
+
+.burger i{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.burger i:hover{
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1090px) {
-  .header-menu__dropdown-nav.contactbtn {
-    margin-left: 15px;
+  ul.contactbtn {
+    margin-left: 10px;
   }
 
   .navbar-item.bag {
-    margin-right: 15px;
+    margin-right: 0px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  ul.contactbtn{
+    display: none !important;
+  }
+  .burger{
+    display: block;
+  }
+  .header-two{
+    display: none;
+  }
+  .navbar.one{
+    padding-bottom: 25px;
+  }
+  #collapsedHeader{
+    display: block;
   }
 }
 
@@ -580,8 +623,9 @@ header {
 }
 
 .collections-image img {
-  width: auto;
+  width: 250px;
   height: 250px;
+  object-fit: cover;
   transition: height 0.3s ease; 
 }
 
