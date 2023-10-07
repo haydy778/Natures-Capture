@@ -100,8 +100,6 @@ class Header extends HTMLElement {
           <li class="navbar-item dropdown-menu-name">
             <a href="shopall.html" class="navbar-a-item dropdown-menu-name-a">
               Collections <i class="fa-solid fa-chevron-down"></i>
-              <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
             </a>
             <div class="dropdown-menu-header drop">
               <ul class="header-menu__dropdown-nav">
@@ -151,6 +149,32 @@ class Header extends HTMLElement {
       </div>
     </header>
   </header>
+  <header class="collapsed-header" id="collapsedHeader">
+    <div class="navbar-container three">
+      <ul class="navbar three" id="navbar">
+        <li class="navbar-item">
+          <a class="navbar-a-item" href="index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-a-item" href="shopall.html">Shop All</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-a-item" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="navbar-item">
+          <a href="shopall.html" class="navbar-a-item">
+            Collections
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-a-item" href="about.html">About</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-a-item" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
   <div class="cart-container" id="cartDrawer">
   <div class="cart-full-title">Your Bag</div>
     <i class="fa-solid fa-xmark" id="cartClose"></i>
@@ -168,17 +192,19 @@ customElements.define('header-component', Header);
 //Collapesed header open
 let collapsedHeader = document.getElementById('collapsedHeader');
 let icon = document.getElementById('faBars');
+let body = document.body;
+let html = document.getElementById('html');
 
 function openHeader(){
   if(collapsedHeader.style.transform == 'translateX(0%)'){
     collapsedHeader.style.transform = 'translateX(-100%)'
     icon.classList.add('fa-bars');
-    icon.classList.remover('fa-xmark');
-    document.body.style.overflowY = 'hidden';
+    icon.classList.remove('fa-xmark');
   }else{
     collapsedHeader.style.transform = 'translateX(0%)'
     icon.classList.add('fa-xmark');
     icon.classList.remove('fa-bars');
+    html.style.overflow = 'hidden';
   }
 }
 
