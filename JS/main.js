@@ -210,10 +210,10 @@ function openHeader(){
 
 
 // Get references to HTML elements
-var navbar = document.getElementById("headerTwo");
-var filter = document.getElementById("fil");
-var or = document.getElementById("or");
+let filter = document.getElementById("fil");
+let or = document.getElementById("or");
 let banner = document.getElementById("banner");
+let navbar = document.getElementById("headerTwo");
 
 // Add scroll event listener to window
 window.onscroll = function () {
