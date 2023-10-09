@@ -1443,6 +1443,7 @@ footer {
 .image-product-container {
   width: 300px;
   height: 300px;
+  object-fit: cover;
   margin-bottom: 5px;
   user-select: none;
   overflow: hidden;

@@ -73,7 +73,7 @@ function displayImages(filteredImages) {
   filteredImages.forEach(async (image) => {
     // Create DOM elements for each image
     const product = document.createElement("div");
-    const imageContainer = document.createElement("div");
+    const imageContainer = document.createElement("img");
     const textContainer = document.createElement("div");
     const name = document.createElement("h1");
     const price = document.createElement("p");
@@ -93,7 +93,7 @@ function displayImages(filteredImages) {
     addcartButton.appendChild(document.createTextNode("Add To Cart"));
 
     // Set the background image of the image container
-    imageContainer.style.background = "url('" + image.source + "') no-repeat center scroll";
+    imageContainer.src = image.source;
     // Preload the image and get its dimensions
     const imageDimensions = await getImageDimensions(image.source);
     const aspectRatio = imageDimensions.width / imageDimensions.height;
