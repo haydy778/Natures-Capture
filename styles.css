@@ -1845,3 +1845,11 @@ footer {
   transform-origin: center;
 }
 
+.message{
+  font-family: Tiemann-Light;
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin-bottom: 10em;
+  margin-top: 2em;
+  margin-left: 20px;
+}

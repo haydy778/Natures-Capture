@@ -69,7 +69,13 @@ function getImageDimensions(imageSource) {
 // Function to display the filtered images
 function displayImages(filteredImages) {
   productGrid.innerHTML = ""; // Clear the product grid
-
+  if (filteredImages.length === 0) {
+    // If no images are filtered say images coming soon.
+    const message = document.createElement("p");
+    message.textContent = "Images coming soon!";
+    productGrid.appendChild(message);
+    message.classList.add("message")
+  } else{
   filteredImages.forEach(async (image) => {
     // Create DOM elements for each image
     const product = document.createElement("div");
@@ -118,6 +124,7 @@ function displayImages(filteredImages) {
       enlargeImageContainer(imageContainer);
     });
   });
+}
 }
 
 // Initially, show all images by calling filterItems with "All" category and empty search term
