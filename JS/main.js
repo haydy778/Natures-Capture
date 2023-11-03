@@ -423,7 +423,7 @@ function renderCart() {
     } else {
       cartEmptyMessage.innerHTML = ''; // Clear the cart empty message
 
-      let totalPrice = 0;
+      let totalPrice = 0; // set current total price of cart items
 
       // Loop through each item in the cart
       cart.forEach((item, index) => {
